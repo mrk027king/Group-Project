@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark theme to match documentary image */
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-bottom: 2px solid #8b0000; /* Subtle dark red accent */
+}
+
+/* Centering the entire content */
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.contact-form {
+    background: #1f1f1f;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 700px;
+    text-align: center; /* Centers labels and titles */
+}
+
+.form-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Form Groups centered */
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+.form-input, .form-select, .form-textarea {
+    width: 100%;
+    max-width: 500px; /* Keeps inputs from stretching too far */
+    padding: 0.8rem;
+    background: #2c2c2c;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 4px;
+}
+
+/* RADIO BUTTONS IN ONE LINE */
+.radio-group {
+    display: flex;
+    flex-direction: row;      /* Forces horizontal line */
+    justify-content: center;  /* Centers them */
+    flex-wrap: wrap;          /* Responsive wrap for small screens */
+    gap: 15px;                /* Space between items */
+    width: 100%;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* BUTTONS ON THE SAME LINE */
+.form-actions {
+    display: flex;
+    justify-content: center; /* Centers both buttons */
+    gap: 20px;              /* Space between buttons */
+    margin-top: 40px;       /* The vertical gap you wanted */
+}
+
+.submit-btn, .reset-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn {
+    background-color: #8b0000;
+    color: white;
+}
+
+.reset-btn {
+    background-color: #444;
+    color: white;
+}
+
+.submit-btn:hover { background-color: #a00000; }
+.reset-btn:hover { background-color: #555; }
+
+/* Footer Link styling */
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #8b0000;
+    padding-bottom: 5px;
+}
+
+footer a:hover {
+    color: #ff4d4d;
+}
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Darkens the background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-box {
+    background: #1f1f1f;
+    border: 2px solid #8b0000; /* Matching your red accent */
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    max-width: 400px;
+}
+
+.modal-box h3 {
+    margin-bottom: 15px;
+    color: #8b0000;
+}
+
+.modal-box button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #8b0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
