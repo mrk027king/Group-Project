@@ -107,7 +107,7 @@
             padding: 0.5rem 1.5rem;
             border-radius: 0.5rem;
             display: inline-block;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             font-size: 0.875rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -115,13 +115,13 @@
 
         .hero h1 {
             font-size: 4rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0rem;
             font-weight: 700;
         }
 
         .hero-subtitle {
             font-size: 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             color: #d1d5db;
         }
 
@@ -145,6 +145,18 @@
         .warning-box p {
             font-size: 0.875rem;
             color: #fef08a;
+        }
+
+        .group-members{
+            background: rgba(255,255, 255, 0.1);
+            padding:  1rem;
+            border-radius: 0.5rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.09rem;
         }
 
         /* Section Styles */
